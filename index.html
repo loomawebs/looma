@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Looma</title>
+    <link rel="icon" href="images/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/Logo.png" alt="" />
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <nav id="nav">
+        <ul>
+          <li class="dropdown">
+            <a href="#servicios">
+              <span>SERVICIOS</span>
+              <img src="images/Arrow.png" alt="" />
+            </a>
+            <ul class="submenu">
+              <li><a href="./pagweb.html">Diseño Web</a></li>
+              <li><a href="./mantenimiento.html">Mantenimiento</a></li>
+              <li><a href="./redes.html">Redes Sociales</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#planes">
+              <span>PLANES</span>
+              <img src="images/Arrow.png" alt="" />
+            </a>
+            <ul class="submenu">
+              <li><a href="#planes">Plan Básico</a></li>
+              <li><a href="#planes">Plan Intermedio</a></li>
+              <li><a href="#planes">Plan Premium</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#contacto" class="btn">EMPEZAR</a>
+    </header>
+
+    <section class="hero">
+      <h1>Creamos la página web de tus sueños</h1>
+      <a href="#saber_mas" class="more-btn">SABER MÁS</a>
+      <div style="position: absolute; bottom: 4rem" id="saber_mas"></div>
+    </section>
+
+    <section id="intro" class="intro">
+      <div class="intro-text">
+        <h2>Desarrollamos tu página web completa y personalizada</h2>
+        <a href="#contacto">CONTACTAR AHORA</a>
+      </div>
+      <h2 class="subtitle">Estos son algunos ejemplos de nuestro servicio.</h2>
+      <div class="projects">
+        <!-- Ejemplo de proyectos -->
+        <div data-aos="fade-up" class="project">
+          <img src="images/Logan.png" alt="Logan" />
+          <div class="project-info">
+            <h3>LOGAN</h3>
+            <p>Tienda digital de ropa</p>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="project">
+          <img src="images/FusionLine.png" alt="Crosses Movies" />
+          <div class="project-info">
+            <h3>Fusion Line</h3>
+            <p>Tienda de ropa / showroom</p>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="project">
+          <img src="images/porfolio.png" alt="Crosses Movies" />
+          <div class="project-info">
+            <h3>Franco Grosso</h3>
+            <p>Porfolio Web</p>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="project">
+          <img src="images/GML.png" alt="Crosses Movies" />
+          <div class="project-info">
+            <h3>GameMakersLab</h3>
+            <p>Cursos Online</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video-section">
+      <video
+        data-aos="fade-up"
+        src="muestra.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        controls
+      ></video>
+    </section>
+    <section id="servicios" class="services">
+      <h2 class="title">SERVICIOS</h2>
+      <div class="service-list">
+        <div class="l">
+          <div data-aos="fade-up" class="service serv1">
+            <img src="images/diseñoweb.jpg" alt="" />
+            <h3>Diseño Web</h3>
+            <p>
+              Diseño web moderno, rápido y adaptable a cualquier dispositivo.
+              Páginas pensadas para atraer clientes y hacer crecer tu negocio.
+            </p>
+            <a href="./pagweb.html">CONSULTAR</a>
+          </div>
+          <div data-aos="fade-up" class="other">
+            <p>¿Tienes alguna duda con los servicios?</p>
+            <a href="">NO DUDES EN CONTACTARNOS AL WHATSAPP &rarr;</a>
+          </div>
+        </div>
+
+        <div class="r">
+          <div data-aos="fade-up" class="service serv2">
+            <img src="images/mantenimiento.jpg" alt="" />
+            <h3>Mantenimiento Web</h3>
+            <p>
+              Mantené tu web segura, actualizada y funcionando sin problemas
+              todo el tiempo.
+            </p>
+            <a href="./mantenimiento.html">CONSULTAR</a>
+          </div>
+          <div data-aos="fade-up" class="service serv3">
+            <img src="images/redes.jpg" alt="" />
+            <h3>Gestión de Redes Sociales</h3>
+            <p>
+              Gestionamos tus redes sociales, creando contenido y estrategias
+              para atraer más clientes y hacer crecer tu marca.
+            </p>
+            <a href="./redes.html">CONSULTAR</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planes" class="pricing">
+      <h2 class="title">PLANES Y PRECIOS</h2>
+      <div class="pricing-list">
+        <div data-aos="fade-up" class="plan">
+          <span class="type">Básico</span>
+          <h3>Página Web</h3>
+          <p class="price">ARS$69.990</p>
+          <p>
+            Creación de páginas web modernas y funcionales, adaptadas a
+            cualquier dispositivo (PC, tablet, celular). <br /><br />
+            Diseño visual atractivo y personalizado según la identidad de tu
+            marca o negocio. <br /><br />
+            Integración de formularios, catálogos, tiendas online o secciones
+            interactivas. <br /><br />
+            Integración de formularios, catálogos, tiendas online o secciones
+            interactivas según necesidad.
+          </p>
+          <a
+            href="https://wa.me/5492645643805?text=Hola,%20quiero%20consultar%20sobre%20%20el%20plan%20básico%20de%20Looma."
+            target="_blank"
+            >OBTENER PLAN</a
+          >
+        </div>
+        <div data-aos="fade-up" class="plan">
+          <span class="type">Estándar</span>
+          <h3>Mantenimiento Web</h3>
+          <p class="price">ARS$29.990 / Mes</p>
+          <p>
+            Creación de páginas web modernas, adaptables a cualquier dispositivo
+            y personalizadas según tu marca. <br /><br />
+            Optimización de velocidad y experiencia de usuario. <br /><br />
+            Actualización y mantenimiento regular del contenido y
+            funcionalidades de la web. <br /><br />
+            Soporte para solucionar problemas técnicos y asegurar que la web
+            funcione siempre correctamente.
+          </p>
+          <a
+            href="https://wa.me/5492645643805?text=Hola,%20quiero%20consultar%20sobre%20%20el%20plan%20estándar%20de%20Looma."
+            target="_blank"
+            >OBTENER PLAN</a
+          >
+        </div>
+        <div data-aos="fade-up" class="plan">
+          <span class="type">Premium</span>
+          <h3>Mantenimiento + Gestión de Redes Sociales</h3>
+          <p class="price">ARS$59.990 / Mes</p>
+          <p>
+            Desarrollamos tu página con estilo moderno y adaptable a cualquier
+            dispositivo, que represente tu marca de manera única. <br /><br />
+            Nos encargamos de que todo funcione sin problemas, con
+            actualizaciones y optimización continua. <br /><br />
+            Manejamos tus redes, generamos contenido, interactuamos con tu
+            audiencia y ayudamos a que tu comunidad crezca.
+          </p>
+          <a
+            href="https://wa.me/5492645643805?text=Hola,%20quiero%20consultar%20sobre%20%20el%20plan%20premium%20de%20Looma."
+            target="_blank"
+            >OBTENER PLAN</a
+          >
+        </div>
+      </div>
+      <div style="position: absolute; bottom: 4rem" id="contacto"></div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="contact-form">
+        <div class="contact-l">
+          <h2>Contáctanos hoy mismo y haremos realidad tus ideas</h2>
+          <div class="social">
+            <h3>O Contáctanos por</h3>
+            <a href="https://wa.me/5492645643805" target="_blank">
+              <img src="images/Whatsapp.png" alt="Whatsapp" />
+              <span>Whatsapp</span>
+            </a>
+
+            <a href="mailto:francogrosso36@gmail.com"
+              ><img src="images/Mail.png" alt="" /><span>Email</span></a
+            >
+           <a href="tel:+542645643805">
+  <img src="images/Phone.png" alt="Teléfono" />
+  <span>264 564 3805</span>
+</a>
+
+          </div>
+          <div class="redes">
+            <h3>Síguenos en nuestras redes</h3>
+            <div class="redes-cont">
+              <a href="https://www.instagram.com/looma_webs/"
+                ><img src="images/ig.png" alt=""
+              /></a>
+              <a href=""><img src="images/f.png" alt="" /></a>
+              <a href=""><img src="images/x.png" alt="" /></a>
+              <a href=""><img src="images/in.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <form id="contactForm">
+          <p>Envíanos un mensaje</p>
+          <input type="text" name="name" placeholder="Nombre" required />
+          <input type="email" name="email" placeholder="Tu Email" required />
+          <textarea
+            name="message"
+            rows="12"
+            placeholder="Tu Mensaje"
+            required
+          ></textarea>
+          <button type="submit">ENVIAR MENSAJE &#x1F852;</button>
+          <p id="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-container">
+        <!-- Diseño Web -->
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Cuánto tiempo demora en estar lista una página web?
+          </button>
+          <div class="faq-answer">
+            <p>
+              El tiempo promedio de desarrollo es de 1 a 3 semanas, dependiendo
+              de la complejidad y los contenidos que se necesiten.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿La página web se adapta a celulares y tablets?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sí, todos nuestros sitios son totalmente responsivos, lo que
+              significa que se adaptan a cualquier dispositivo.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Puedo pedir cambios en el diseño?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Claro, trabajamos en conjunto contigo para que el resultado final
+              sea exactamente lo que imaginas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mantenimiento Web -->
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Qué incluye el servicio de mantenimiento web?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Incluye actualizaciones de seguridad, copias de respaldo,
+              optimización de velocidad y resolución de errores técnicos, y
+              optimización SEO.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Puedo contratar solo el mantenimiento sin el diseño?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sí, ofrecemos el servicio de mantenimiento incluso si tu web fue
+              desarrollada por otra empresa.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Con qué frecuencia se hace el mantenimiento?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Se reconmienda hacer al menos tres revisones mensuales para
+              garantizar la seguridad y el rendimiento. Pero hacemos todas las
+              necesarias.
+            </p>
+          </div>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="faq-item">
+          <button class="faq-question">¿Qué redes sociales administran?</button>
+          <div class="faq-answer">
+            <p>
+              Trabajamos principalmente con Instagram, Facebook, LinkedIn y
+              TikTok, aunque nos adaptamos a las necesidades de tu marca.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Incluye diseño de publicaciones y estrategias?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sí, creamos contenido visual atractivo y planificamos estrategias
+              para atraer clientes y potenciar tu marca.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Puedo combinar gestión de redes con diseño web?
+          </button>
+          <div class="faq-answer">
+            <p>
+              ¡Por supuesto! De hecho, ofrecemos planes integrales que incluyen
+              ambos servicios para potenciar tu presencia digital.
+            </p>
+          </div>
+        </div>
+
+        <!-- Generales -->
+        <div class="faq-item">
+          <button class="faq-question">¿Cómo puedo pagar los servicios?</button>
+          <div class="faq-answer">
+            <p>
+              Aceptamos Mercado Pago, transferencias bancarias, tarjetas de
+              crédito y débito, y en algunos casos pago por PayPal.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Ofrecen soporte después de entregar el proyecto?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sí, ofrecemos soporte y asistencia técnica para resolver cualquier
+              duda o inconveniente después de la entrega.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <!-- Texto principal -->
+        <div class="footer-text">
+          <h2>Crea lo que sea que imagines con Looma</h2>
+          <p>Designed with ♡ by Franco Grosso</p>
+        </div>
+
+        <!-- Columnas -->
+        <div class="footer-columns">
+          <!-- Suscripción -->
+          <div class="footer-col">
+            <h3>Suscríbete a Looma</h3>
+            <form action="#">
+              <input type="email" placeholder="Tu Email" required />
+              <button type="submit">SUSCRIBIRME</button>
+            </form>
+          </div>
+
+          <!-- Servicios -->
+          <div class="footer-col">
+            <h3>Servicios</h3>
+            <ul>
+              <li><a href="#servicios">Diseño Web</a></li>
+              <li><a href="#servicios">Mantenimiento Web</a></li>
+              <li><a href="#servicios">Gestión de Redes Sociales</a></li>
+            </ul>
+          </div>
+
+          <!-- Planes -->
+          <div class="footer-col">
+            <h3>Planes y Precios</h3>
+            <ul>
+              <li><a href="#planes">Básico (Página Web)</a></li>
+              <li><a href="#planes">Estándar (Mantenimiento Web)</a></li>
+              <li>
+                <a href="#planes"
+                  >Premium (Página Web + Mantenimiento + <br />
+                  Gestión de Redes Sociales)</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Redes Sociales -->
+          <div class="footer-col">
+            <h3>Redes Sociales</h3>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/looma_webs/" target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank">X / Twitter</a>
+              </li>
+              <li>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contacto -->
+          <div class="footer-col">
+            <h3>Contáctanos</h3>
+            <ul>
+              <li><a href="tel:2645643805">264 564 3805</a></li>
+              <li>
+                <a href="mailto:francogrosso36@gmail.com"
+                  >francogrosso36@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logos">
+          <img src="images/logos/Looma (2) (1).png" alt="Looma" />
+          <img src="images/logos/Looma (3).png" alt="Looma" />
+          <img src="images/logos/Looma (4)(1).png" alt="Looma" />
+          <img src="images/logos/Looma.png" alt="Looma" />
+          <img src="images/logos/Looma Rounded (1).png" alt="Looma" />
+          <img src="images/logos/Looma (5).png" alt="Looma" />
+        </div>
+        <p class="rights">© 2025 Looma. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      // Inicializa EmailJS con tu Public Key
+      emailjs.init("dOhV_HvIqJZRyJRPv"); // Reemplaza con tu Public Key
+
+      const form = document.getElementById("contactForm");
+      const status = document.getElementById("status");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_ho0ntte", "template_k7j21v6", this).then(
+          () => {
+            status.textContent = "¡Mensaje enviado correctamente!";
+            status.style.color = "#0b0";
+            form.reset();
+          },
+          (err) => {
+            status.textContent = "Hubo un error al enviar el mensaje.";
+            status.style.color = "#f00";
+            console.error(err);
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
