@@ -9,6 +9,8 @@
 body {
   font-family: "Afacad", Arial, sans-serif;
   color: #fff;
+  overflow-x: hidden;
+
 }
 a {
   text-decoration: none;
@@ -715,9 +717,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.footer-text {
-  flex: 1 1 32%;
-}
 
 .footer-text h2 {
   font-family: 'Italiana', serif;
@@ -840,47 +839,47 @@ video {
    Breakpoints: 1200 / 992 / 768 / 600 / 430
    ================================ */
 
-/* ----- ≤1200px (laptops pequeñas) ----- */
+/* ----- ≤1200px ----- */
 @media (max-width: 1200px) {
-  .header { font-size: 1.1rem; }
+  .header { font-size: 1rem; }
   .logo img { width: 150px; }
 
-  .hero { padding: 5rem 2rem 3rem; background-position: center -60px; }
-  .hero h1 { font-size: 2.2rem; }
+  .hero { padding: 4.5rem 2rem 3rem; background-position: center -60px; }
+  .hero h1 { font-size: 2rem; line-height: 1.2; }
 
-  .intro { padding: 4rem; }
-  .intro-text h2 { font-size: 3.2rem; }
+  .intro { padding: 3.5rem 2rem; }
+  .intro-text h2 { font-size: 2.6rem; line-height: 1.2; }
 
   .projects,
   .service-list { grid-template-columns: repeat(2, minmax(320px, 1fr)); }
 
-  .project-info h3 { font-size: 1.6rem; }
+  .project-info h3 { font-size: 1.3rem; line-height: 1.25; }
 
-  .service h3 { font-size: 1.3rem; margin: 3rem 0 0 1.4rem; color: #fff;}
-  .service p  { font-size: 1rem; margin: 6.5rem 2rem 0 1.4rem; color: #fff;}
+  .service h3 { font-size: 1.2rem; margin: 2.4rem 0 0 1.4rem; color: #fff; }
+  .service p  { font-size: .95rem; margin: 5.8rem 1.6rem 0 1.4rem; color: #fff; }
   .service img { filter: brightness(0.5); }
 
-  .title { font-size: 2.2rem; margin: 4rem 2rem; }
+  .title { font-size: 2rem; margin: 3.2rem 2rem; }
 
-  .services { padding: 1rem 3rem 4rem; }
-  .video-section { padding: 0 3rem 4rem; }
+  .services { padding: 1rem 2.2rem 3.5rem; }
+  .video-section { padding: 0 2.2rem 3.5rem; }
 
-  .pricing-list { grid-template-columns: 1fr; padding: 4rem 3rem; gap: 4rem; }
-  .plan .type { font-size: 1.1rem; padding: .4rem 3rem; }
-  .plan h3 { font-size: 1.4rem; }
-  .plan p { font-size: 1.05rem; margin-bottom: 4rem; }
-  .plan .price { font-size: 2.3rem; }
+  .pricing-list { grid-template-columns: 1fr; padding: 3.2rem 2.2rem; gap: 3rem; }
+  .plan .type { font-size: 1rem; padding: .35rem 2.2rem; }
+  .plan h3 { font-size: 1.25rem; }
+  .plan p { font-size: .98rem; margin-bottom: 3rem; line-height: 1.5; }
+  .plan .price { font-size: 2rem; line-height: 1.1; }
 
-  .contact { padding: 4rem; }
-  .contact-form { padding: 2rem; }
-  .contact-form h2 { font-size: 3rem; }
-  .social h3, .redes h3 { font-size: 1.4rem; }
+  .contact { padding: 3.2rem 2rem; }
+  .contact-form { padding: 1.6rem; }
+  .contact-form h2 { font-size: 2.2rem; line-height: 1.2; }
+  .social h3, .redes h3 { font-size: 1.2rem; }
 
-  .faq h2 { font-size: 2.2rem; }
-  .faq-question { font-size: 1.2rem; }
-  .faq-answer { font-size: 1rem; }
+  .faq h2 { font-size: 2rem; }
+  .faq-question { font-size: 1.1rem; }
+  .faq-answer { font-size: .98rem; line-height: 1.55; }
 
-  .footer-text h2 { font-size: 2.6rem; }
+  .footer-text h2 { font-size: 2.2rem; }
 }
 
 /* ----- ≤992px (tablets horizontales) ----- */
@@ -891,29 +890,27 @@ video {
   .projects,
   .service-list { grid-template-columns: 1fr 1fr; }
 
- pricing-list { grid-template-columns: 1fr; padding: 4rem 3rem; gap: 4rem; }
+  .pricing-list { grid-template-columns: 1fr; padding: 3rem 2rem; gap: 3rem; } /* ← corregido el punto */
 
-  .intro-text { flex-direction: column; text-align: center; gap: 1.6rem; }
-  .intro-text h2 { font-size: 2.8rem; }
+  .intro-text { flex-direction: column; text-align: center; gap: 1.4rem; }
+  .intro-text h2 { font-size: 2.2rem; line-height: 1.2; }
 
-  .contact-form { grid-template-columns: 1fr; padding: 2rem; }
+  .contact-form { grid-template-columns: 1fr; padding: 1.6rem; }
   .contact form { padding: 0 1rem; }
 
   .footer-columns { flex-direction: column; gap: 2rem; }
-  .footer-text h2 { text-align: left; }
+  .footer-text h2 { text-align: left; font-size: 2rem; }
 }
 
 /* ----- ≤768px (tablets verticales / móviles grandes) ----- */
 @media (max-width: 768px) {
-  .header {  padding: .8rem 1rem; font-size: 1rem; }
-  .logo img { width: 135px; }
+  .header { padding: .8rem 1rem; font-size: .95rem; }
+  .logo img { width: 130px; }
 
   /* NAV en columna + submenu táctil */
-  .dropdown a {
-    justify-content: center;
-  }
+  .dropdown a { justify-content: center; }
   nav ul { align-items: center; gap: .8rem; }
-  nav .submenu li {list-style:disc;}
+  nav .submenu li { list-style: disc; }
   .submenu {
     align-items: start;
     position: static;
@@ -930,84 +927,101 @@ video {
   nav ul li:hover .submenu { display: block; } /* tap o hover */
   .submenu::before, .submenu::after { display: none; }
 
-  .btn { margin-right: 0; padding: .45rem 1.4rem; }
-  .more-btn { padding: .6rem 2rem; font-size: 1.05rem; }
+  .btn { margin-right: 0; padding: .45rem 1.2rem; }
+  .more-btn { padding: .55rem 1.6rem; font-size: 1rem; }
 
-  .hero {gap: 2.4rem; padding: 4.5rem 1.2rem 2.2rem; background-position: center; }
-  .hero h1 { font-size: 1.9rem; }
+  .hero { gap: 2rem; padding: 3.6rem 1.2rem 2rem; background-position: center; }
+  .hero h1 { font-size: 1.6rem; line-height: 1.25; }
 
-  .intro { padding: 2.2rem 1.2rem; }
-  .intro-text h2 { font-size: 2.2rem; }
+  .intro { padding: 2rem 1.2rem; }
+  .intro-text h2 { font-size: 1.8rem; line-height: 1.25; }
 
   .projects,
   .service-list { grid-template-columns: 1fr; padding: 0 1rem; }
 
-  .service h3 { font-size: 2rem; margin: 2rem 0 0 1.2rem; }
-  .service p  { font-size: 1.05rem; margin: 4.4rem 1rem 0 1.2rem; }
+  .services { padding: 1rem 1.2rem 3rem; }
+  .service img { border-radius: 10px 10px 0 0; }
+  .service h3 { font-size: 1.25rem; margin: 1.6rem 0 0 1.2rem; }
+  .service p  { font-size: .95rem; margin: 3.6rem 1rem 0 1.2rem; }
+  .service a { border-radius: 0 0 10px 10px; }
 
-  .pricing-list { grid-template-columns: 1fr; padding: 2rem 1rem; gap: 4rem; }
-  .plan { padding: 1.2rem; }
-  .plan .type { top: -2rem; font-size: 1rem; padding: .35rem 1.8rem; }
-  .plan h3 { font-size: 1.3rem; }
-  .plan p { font-size: 1rem;  }
-  .plan .price { font-size: 2rem; }
-  .plan a { font-size: 1.1rem; }
+  .other a { padding: .4rem 1rem !important; font-size: .8rem !important; }
 
-  .contact { padding: 3rem 1rem; }
+  .pricing-list { grid-template-columns: 1fr; padding: 2rem 1rem; gap: 3rem; }
+  .plan { padding: 1.1rem; }
+  .plan .type { top: -1.6rem; font-size: .95rem; padding: .3rem 1.6rem; }
+  .plan h3 { font-size: 1.05rem; }
+  .plan p { font-size: .92rem; }
+  .plan .price { font-size: 1.6rem; }
+  .plan a { font-size: 1rem; }
+
+  .contact { padding: 2.4rem 1rem; }
   .contact-form { padding: 1.2rem; box-shadow: 0 0 12px #00000022; }
-  .contact-form h2 { font-size: 2.2rem; }
-  .social a { padding: .6rem 1rem; font-size: 1.05rem; }
-  .social a img { width: 26px; }
-  .redes img { width: 40px; }
+  .contact-form h2 { font-size: 1.6rem; }
+  .social a { padding: .55rem .9rem; font-size: 1rem; }
+  .social a img { width: 24px; }
+  .redes img { width: 36px; }
 
-  .faq { margin: 4rem auto; padding: 1rem; }
-  .faq h2 { font-size: 2rem; }
-  .faq-question { font-size: 1.1rem; padding: 1rem 1.2rem; }
-  .faq-answer { font-size: .98rem; }
+  .faq { margin: 3rem auto; padding: 1rem; }
+  .faq h2 { font-size: 1.6rem; }
+  .faq-question { font-size: 1rem; padding: .9rem 1.1rem; }
+  .faq-answer { font-size: .95rem; line-height: 1.55; }
 
-  .footer { padding: 2.4rem 1.2rem; }
-  .footer-text h2 { font-size: 2rem; margin: 0 0 1rem; text-align: center; }
+  .footer { padding: 2rem 1.2rem; }
+  .footer-text h2 { font-size: 1.7rem; margin: 0 0 .8rem; text-align: center; }
   .footer-text p { text-align: center; }
   .footer-columns { margin: 0; }
-  .footer-logos { gap: 1.2rem; }
-  .footer-logos img { height: 48px; }
-  .footer-bottom .rights { margin-top: 2rem; }
+  .footer-logos { gap: 1rem; }
+  .footer-logos img { height: 44px; }
+  .footer-bottom .rights { margin-top: 1.6rem; }
 }
 
 /* ----- ≤600px (móviles) ----- */
 @media (max-width: 600px) {
   nav a { padding: 0 .4rem; }
 
-  .service a { font-size: 1.1rem; }
-  .subtitle { font-size: 1.1rem; margin: 2rem 0; }
+  .subtitle { font-size: 1rem; margin: 1.6rem 0; }
 
-  .contact input, .contact textarea { font-size: .95rem; padding: 1rem; }
-  .contact button { font-size: 1.05rem; padding: .8rem; }
+  .service h3 { font-size: 1.15rem; margin: 1.4rem 0 0 1rem; }
+  .service a { font-size: .95rem; padding: .55rem; }
 
-  .footer-col h3 { font-size: .95rem; }
-  .footer-col a { font-size: .9rem; }
-  .footer-logos img { height: 44px; }
+  .contact input, .contact textarea { font-size: .9rem; padding: .9rem; }
+  .contact button { font-size: 1rem; padding: .75rem; }
+
+  .redes-cont { justify-content: space-evenly; width: 100%; }
+  .redes-cont img { width: 24px; }
+
+  .plan a { font-size: .95rem; padding: .55rem; }
+  .contact-l, .contact-form h2 { align-items: center; text-align: center; }
+  .contact .l h3, .redes h3 { font-size: 1.1rem; }
+  .contact-form form { padding: 1rem 1rem 0 1rem; }
+  .contact-form form input, .contact-form form textarea { font-size: .8rem; }
+  .contact-form form button { font-size: .95rem; padding: .65rem; }
+
+  .footer-col h3 { font-size: .9rem; }
+  .footer-col a { font-size: .88rem; }
+  .footer-logos img { height: 40px; }
 }
 
 /* ----- ≤430px (teléfonos pequeños) ----- */
 @media (max-width: 430px) {
-  .header { font-size: .95rem; }
-  .logo img { width: 120px; }
+  .header { font-size: .9rem; }
+  .logo img { width: 118px; }
 
-  .hero h1 { font-size: 1.6rem; }
-  .intro-text h2 { font-size: 1.8rem; }
+  .hero h1 { font-size: 1.25rem; line-height: 1.25; }
+  .intro-text h2 { font-size: 1.35rem; line-height: 1.25; }
 
-  .service h3 { font-size: 1.7rem; margin-left: 1rem; }
-  .service p  { font-size: .95rem; margin: 3.8rem 1rem 0 1rem; }
+  .service h3 { font-size: 1.05rem; margin-left: 1rem; }
+  .service p  { font-size: .85rem; margin: 3rem 1rem 0 1rem; }
 
-  .plan .price { font-size: 1.8rem; }
-  .plan .type { font-size: .95rem; }
+  .plan .price { font-size: 1.35rem; }
+  .plan .type { font-size: .9rem; }
 
-  .faq h2 { font-size: 1.6rem; }
-  .faq-question { font-size: 1rem; }
-  .faq-answer { font-size: .95rem; }
+  .faq h2 { font-size: 1.35rem; }
+  .faq-question { font-size: .95rem; }
+  .faq-answer { font-size: .9rem; }
 
-  .footer-text h2 { font-size: 1.6rem; }
-  .footer-logos img { height: 38px; }
-  .footer-bottom .rights { font-size: .76rem; }
+  .footer-text h2 { font-size: 1.35rem; }
+  .footer-logos img { height: 36px; }
+  .footer-bottom .rights { font-size: .72rem; }
 }
